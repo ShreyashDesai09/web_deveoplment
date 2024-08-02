@@ -1,0 +1,47 @@
+.one {
+    color: red;
+}
+
+.two {
+    color: green;
+}
+
+.two.num {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+#numbers {
+    color: blue;
+    background-color: aqua;
+    display: inline-block;
+    text-decoration: underline green;
+}
+
+div p {
+    color: yellow;
+    background-color: black;
+    display: inline;
+}
+
+a[href="www.google.com"] {
+
+    background-color: aqua;
+    color: black;
+
+}
+
+a[href="www.facebook.com"] {
+    background-color: green;
+    color: yellowgreen;
+}
+
+div.inheritance {
+    color: red;
+    background-color: aqua;
+    display: inline-block;
+}
+p.all {
+    color: inherit;
+    background-color: inherit;
+}
