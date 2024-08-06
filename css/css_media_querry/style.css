@@ -135,3 +135,128 @@ footer{
     padding: 10px;
     text-align: center;
 }
+
+/* Pesudo Classes */
+
+nav li a:hover {
+    text-decoration: underline;
+    /* background-color: pink; */
+    /* padding: 3px; */
+}
+
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+
+form input:focus{
+    border: 4px dashed #4B4B4B;
+    outline: none;
+}
+
+form input:valid{
+    border: 4px solid #71d300;
+}
+
+nav li:first-child{
+    border: 3px solid #F63232;
+    /* display: inline; */
+    /* border-radius: 25px; */
+}
+
+/* Pesudo Elements */
+
+article p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.join p::first-letter{
+    color: #F63232;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p::selection{
+    background-color: #F63232;
+    color: white;
+}
+
+p::after {
+    content: "...";
+}
+
+/* Responsive Style */
+
+@media screen and (max-width : 1000px){
+    
+    .banner .welcome h2{
+
+    position: absolute;
+    /* left: 0; */
+    /* top: 30%; */
+    /* color: white; */
+    background-color: orange;
+    /* padding: 30px; */
+    font-size: 50px;
+    }
+
+    nav li {
+        font-size: 18px;
+    }
+
+    .images li {
+        width: 100%;
+        margin: 20% auto;
+        display: block;
+    }
+
+}
+
+@media  screen and (max-width : 750px) {
+
+    .banner .welcome h2 {
+        font-size: 40px;
+
+    }
+    
+}
+
+@media screen and (max-width : 600px) {
+
+    .banner .welcome {
+        position: relative;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .banner .welcome br{
+        display: none;
+    }
+
+    .banner .welcome span{
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width : 500px) {
+    
+    nav li {
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        margin: 12px 0px;
+        /* align-content: center; */
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        top: 0px;
+    }
+
+}
